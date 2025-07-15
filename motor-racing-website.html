@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background-color: rgb(195, 193, 204);
+            background-color: rgb(160, 148, 218);
             font-size: 20px;
-
+            margin: 0;
+            padding: 20px;
         }
 
         * {
             box-sizing: border-box;
             padding: 5px;
-
-
         }
 
         .column {
             float: left;
+            border-radius: 25px;
             width: 33.33%;
             padding: 12px;
             height: 700px;
-            border: 1px solid rgb(214, 207, 207);
-
+            overflow-y: auto;
+            border: 1px solid rgb(212, 204, 204);
         }
 
         .row:after {
@@ -33,62 +32,66 @@
             clear: both;
         }
 
-
         h1 {
-            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-family: Impact, sans-serif;
         }
 
-        h2 {
-            font-family: 'Courier New', Courier, monospace;
+        h2,
+        h3,
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(0, 0, 0);
         }
 
-        h3 {
-            font-family: 'Courier New', Courier, monospace;
+        h4 {
+            font-weight: bold;
         }
 
         p {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: rgb(0, 0, 0);
             font-size: 18px;
         }
     </style>
 </head>
 
-
 <body>
 
-    <h1 style="color:rgb(255, 255, 255)">RaceSync</h1>
+    <h1>RaceSync</h1>
 
     <div class="row">
         <div class="column" style="background-color:rgb(238, 70, 70);">
             <h2>Formula 1</h2>
-            <h3>Track: </h3>
-            <p>FP1:</p>
-            <p>FP2:</p>
-            <p>FP3:</p>
-            <p>Qualifying:</p>
-            <p>Race Day:</p>
+            <h3>Track: Silverstone Circuit, UK</h3>
+            <p>FP1: Friday, July 19 – 11:30 AM</p>
+            <p>FP2: Friday, July 19 – 3:00 PM</p>
+            <p>FP3: Saturday, July 20 – 12:00 PM</p>
+            <h4>Qualifying: Saturday, July 20 – 3:00 PM</h4>
+            <h4>Race Day: Sunday, July 21 – 2:00 PM</h4>
         </div>
+
         <div class="column" style="background-color:rgb(15, 230, 212);">
             <h2>WEC</h2>
-            <h3>Track:</h3>
-            <p>FP1:</p>
-            <p>FP2:</p>
-            <p>FP3:</p>
-            <p>Qualifying-LMGT3:</p>
-            <p>Qualifying-Hypercar:</p>
-            <P>Hyperpole-LMGT3:</P>
-            <P>Hyperpole-Hypercar:</P>
-            <p>Race Day:</p>
+            <h3>Track: Circuit de la Sarthe, Le Mans</h3>
+            <p>FP1: Wednesday, June 11 – 2:00 PM</p>
+            <p>FP2: Wednesday, June 11 – 8:00 PM</p>
+            <p>FP3: Thursday, June 12 – 2:00 PM</p>
+            <h4>Qualifying-LMGT3: Thursday, June 12 – 7:00 PM</h4>
+            <h4>Qualifying-Hypercar: Thursday, June 12 – 7:30 PM</h4>
+            <h4>Hyperpole-LMGT3: Friday, June 13 – 8:00 PM</h4>
+            <h4>Hyperpole-Hypercar: Friday, June 13 – 8:30 PM</h4>
+            <h4>Race Day: Sat–Sun, June 14–15 – 4:00 PM</h4>
         </div>
+
         <div class="column" style="background-color:rgb(221, 235, 38);">
             <h2>NASCAR</h2>
-            <h3>Track:</h3>
-            <p>FP1:</p>
-            <p>FP2:</p>
-            <p>FP3:</p>
-            <p>Qualifying:</p>
-            <p>Race Day:</p>
+            <h3>Track: Daytona International Speedway</h3>
+            <p>FP1: Friday, July 26 – 10:00 AM</p>
+            <p>FP2: Friday, July 26 – 1:00 PM</p>
+            <p>FP3: Saturday, July 27 – 11:00 AM</p>
+            <h4>Qualifying: Saturday, July 27 – 3:30 PM</h4>
+            <h4>Race Day: Sunday, July 28 – 6:00 PM</h4>
         </div>
     </div>
 
