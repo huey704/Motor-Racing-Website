@@ -85,6 +85,21 @@
         button {
             border: 1px solid black;
             border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .blackout-button:hover {
+            border: 10px solid rgb(255, 255, 255);
+            opacity: 0.7
+        }
+
+        .button:hover {
+            opacity: 0.7
+        }
+
+        .column.blackout {
+            filter: grayscale(100%) brightness(0.1);
         }
     </style>
 </head>
@@ -103,6 +118,7 @@
             <h4>Qualifying: Saturday, July 20 – 3:00 PM</h4>
             <h4>Race Day: Sunday, July 21 – 2:00 PM</h4>
             <button class="button" style="background-color:rgb(238, 154, 154);">Next Event</button>
+            <button class="blackout-button" style="background-color:rgb(238, 154, 154);">Block out column</button>
         </div>
 
         <div class="column" style="background-color:rgb(15, 230, 212);">
@@ -117,6 +133,7 @@
             <h4>Hyperpole-Hypercar: Friday, June 13 – 8:30 PM</h4>
             <h4>Race Day: Sat–Sun, June 14–15 – 4:00 PM</h4>
             <button class="button" style="background-color:rgb(150, 236, 236);">Next Event</button>
+            <button class="blackout-button" style="background-color:rgb(150, 236, 236);">Block out column</button>
         </div>
 
         <div class="column" style="background-color:rgb(221, 235, 38);">
@@ -128,9 +145,21 @@
             <h4>Qualifying: Saturday, July 27 – 3:30 PM</h4>
             <h4>Race Day: Sunday, July 28 – 6:00 PM</h4>
             <button class="button" style="background-color:rgb(244, 240, 130);">Next Event</button>
+            <button class="blackout-button" style="background-color:rgb(244, 240, 130);">Block out column</button>
         </div>
     </div>
 
 </body>
+
+<script>
+    document.querySelectorAll('.blackout-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const column = button.closest('.column');
+            column.classList.toggle('blackout');
+        });
+    });
+
+</script>
+
 
 </html>
