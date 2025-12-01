@@ -3,6 +3,7 @@
 
 <head>
     <style>
+        /* css sizing of the columns  */
         body {
             background-image: url(spa-francorchamps-2024-screenshot-06.jpg);
             background-repeat: no-repeat;
@@ -35,6 +36,7 @@
             clear: both;
         }
 
+        /* this is the css section for each header and paragraph */
         h1 {
             text-align: center;
             font-family: Impact, sans-serif;
@@ -61,23 +63,20 @@
             font-size: 20px;
         }
 
-        /* width */
+        /* line 64-81 is the code for scrollbar */
         ::-webkit-scrollbar {
             width: 5px;
         }
 
-        /* Track */
         ::-webkit-scrollbar-track {
             background: #c4c4c4;
         }
 
-        /* Handle */
         ::-webkit-scrollbar-thumb {
             background: #838181;
             border-radius: 10px;
         }
 
-        /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
             background: #969494;
         }
@@ -108,6 +107,7 @@
 
     <h1>[RaceSync]</h1>
 
+    <!-- this is the column and setup for the text displayed-->
     <div class="row">
         <div class="column" style="background-color:rgb(238, 70, 70);">
             <h2>Formula 1</h2>
@@ -151,6 +151,7 @@
 
 </body>
 
+<!-- javascript for the blackout button-->
 <script>
     document.querySelectorAll('.blackout-button').forEach(button => {
         button.addEventListener('click', () => {
