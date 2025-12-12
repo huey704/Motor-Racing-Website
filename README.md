@@ -1,7 +1,7 @@
 <h1>Motor-Racing-Website</h1>
 <h2>RaceSync</h2>
 
-This Website will be able to track multiple motor racing series on a three column layout like having F1, WEC and NASCAR with the dates and times of the free practices, qualifying, and race date and time. 
+This Website will be able to track multiple motor racing series on a three column layout like having F1, WEC and NASCAR with the dates and times of the free practices, qualifying, and race date and time. This project will also serve as a project for my CSC131 class at Sac State
 
 The goal of this website is to, solve a problem that others and I deal with, finding the times and dates across difference racing series can be annoying with the official websites for these racing series having bad layouts and not intuitive to find. This project is also serves as a way to sharpen my html and css skills, while learning backend development. Eventually I plan to integrate an API with node js so the site can auto-update with the latest schedule data. If anyone views this please give any constructive critisim as learning from the experience of others is a great tool. Thank you
 
