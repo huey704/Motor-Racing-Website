@@ -111,7 +111,7 @@
     <div class="row">
         <div class="column" style="background-color:rgb(238, 70, 70);">
             <h2>Formula 1</h2>
-            <h3>Track: Silverstone Circuit, UK</h3>
+            <h3 id="f1-trackLocation">Track: Silverstone Circuit, UK</h3>
             <p>FP1: Friday, July 19 – 11:30 AM</p>
             <p>FP2: Friday, July 19 – 3:00 PM</p>
             <p>FP3: Saturday, July 20 – 12:00 PM</p>
@@ -152,15 +152,7 @@
 </body>
 
 <!-- javascript for the blackout button-->
-<script>
-    document.querySelectorAll('.blackout-button').forEach(button => {
-        button.addEventListener('click', () => {
-            const column = button.closest('.column');
-            column.classList.toggle('blackout');
-        });
-    });
-
-</script>
+<script src="script.js"></script>
 
 
 </html>
