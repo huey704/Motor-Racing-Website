@@ -1,4 +1,5 @@
-document.querySelectorAll('.blackout-button').forEach(button => {
+// black out button code
+ocument.querySelectorAll('.blackout-button').forEach(button => {
     button.addEventListener('click', () => {
         const column = button.closest('.column');
         column.classList.toggle('blackout');
@@ -11,7 +12,8 @@ const f1Fp2 = document.querySelector('#f1Fp2');
 const f1Fp3 = document.querySelector('#f1Fp3');
 const f1Qualifying = document.querySelector('#f1Qualifying');
 const f1Race = document.querySelector('#f1Race');
-async function loadSessions() {
+//F1 loading from the open F1 API
+async function loadF1Sessions() {
     try {
 
         const response = await fetch("https://api.openf1.org/v1/sessions?meeting_key=latest&year=2026");
@@ -30,4 +32,4 @@ async function loadSessions() {
     }
 }
 
-loadSessions();
+loadF1Sessions();
