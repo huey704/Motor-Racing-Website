@@ -1,5 +1,5 @@
 // black out button code
-ocument.querySelectorAll('.blackout-button').forEach(button => {
+document.querySelectorAll('.blackout-button').forEach(button => {
     button.addEventListener('click', () => {
         const column = button.closest('.column');
         column.classList.toggle('blackout');
