@@ -19,8 +19,6 @@ async function loadF1Sessions() {
         const response = await fetch("https://api.openf1.org/v1/sessions?meeting_key=latest&year=2026");
         const data = await response.json();
 
-        console.log(data[0])
-
         f1TrackLocation.textContent = "Track: " + data[0].circuit_short_name + ", " + data[0].country_name;
         f1Fp1.textContent = "FP1: " + data[0].date_start;
         f1Fp2.textContent = "FP2: " + data[1].date_start;
@@ -33,3 +31,18 @@ async function loadF1Sessions() {
 }
 
 loadF1Sessions();
+
+//const nascarTrackLocation = document.querySelector('#f1-TrackLocation');
+//const nascarFp1 = document.querySelector('#f1Fp1');
+//const nascarFp2 = document.querySelector('#f1Fp2');
+//const nascarFp3 = document.querySelector('#f1Fp3');
+//const nascarQualifying = document.querySelector('#f1Qualifying');
+//const nascarRace = document.querySelector('#f1Race');
+
+async function loadNascarSession() {
+    try {
+
+    } catch (error) {
+        console.error("Failed:", error);
+    }
+}
