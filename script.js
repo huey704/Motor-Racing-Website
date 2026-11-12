@@ -6,6 +6,7 @@ document.querySelectorAll('.blackout-button').forEach(button => {
     });
 });
 
+//const f1RaceName = document.querySelector('#f1-RaceName');
 const f1TrackLocation = document.querySelector('#f1-TrackLocation');
 const f1Fp1 = document.querySelector('#f1Fp1');
 const f1Fp2 = document.querySelector('#f1Fp2');
